@@ -1,8 +1,8 @@
 import streamlit as st
 import json
-from utils.perplexity_client import PerplexityClient
-from utils.content_processor import ContentProcessor
-from utils.fallback_generator import FallbackContentGenerator
+from perplexity_client import PerplexityClient
+from content_processor import ContentProcessor
+from fallback_generator import FallbackContentGenerator
 
 # Initialize clients
 perplexity_client = PerplexityClient()
@@ -168,4 +168,5 @@ def main():
         """)
 
 if __name__ == "__main__":
+
     main()
